@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:factura_choferes/controller/choferes_controller.dart';
-import 'package:factura_choferes/widgets/textbox.dart';
-import 'package:factura_choferes/widgets/boton.dart';
-import 'package:factura_choferes/widgets/checkbox.dart';
-import 'package:factura_choferes/widgets/radiobutton.dart';
+import 'package:factura_choferes/controllers/chofer_controller.dart';
+import 'package:factura_choferes/widgets/atoms/textbox.dart';
+import 'package:factura_choferes/widgets/atoms/boton.dart';
+import 'package:factura_choferes/widgets/atoms/checkbox.dart';
+import 'package:factura_choferes/widgets/atoms/radiobutton.dart';
 
 class HomePageView extends StatefulWidget {
   const HomePageView({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class HomePageView extends StatefulWidget {
 }
 
 class _HomePageViewState extends State<HomePageView> {
-  late ChoferesController controller;
+  late ChoferController controller;
   final List<List<TextEditingController>> horasControllers = [];
   final List<TextEditingController> nombreControllers = [];
   final List<TextEditingController> sueldoControllers = [];
@@ -25,7 +25,7 @@ class _HomePageViewState extends State<HomePageView> {
   @override
   void initState() {
     super.initState();
-    controller = ChoferesController();
+    controller = ChoferController();
 
     // Inicializar controladores de texto
     for (int i = 0; i < 5; i++) {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:factura_choferes/controller/choferes_controller.dart';
-import 'package:factura_choferes/widgets/boton.dart';
-import 'package:factura_choferes/widgets/labels.dart';
+import 'package:factura_choferes/controllers/chofer_controller.dart';
+import 'package:factura_choferes/widgets/atoms/boton.dart';
+import 'package:factura_choferes/widgets/atoms/labels.dart';
 
 class ResultadoView extends StatefulWidget {
-  final ChoferesController controller;
+  final ChoferController controller;
 
   const ResultadoView({Key? key, required this.controller}) : super(key: key);
 

@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Factura Choferes',
+      title: 'Deber 2 Aplicaciones',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: Routes.homePage,
+      initialRoute: Routes.mainApp,
       onGenerateRoute: Routes.generateRoute,
     );
   }
